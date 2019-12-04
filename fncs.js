@@ -6,5 +6,3 @@ async function launchSncfRequest(query) {
  }
 
  launchSncfRequest('Lille').then(function(gares) {return console.log(gares)});
-
-
