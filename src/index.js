@@ -3,32 +3,24 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import { UserPanel } from './UserPanel';
 
-export default function App({name}) {
-    return React.createElement('div', {style: { color: 'blue'}}, 'Paragraph de '+name,
-     React.createElement("p", null, "Premier"));
-}
+function App({ isLogged }) {
+    const name = 'Redha';
+const welcoming = <p>Bonjour {name}</p>
 
-App.propTypes = {
-    name: PropTypes.string.isRequired,
-}
-
-App.defaultProps = {
-    name: 'Redha',
-}
-
-
-export class AppClass extends React.Component {
-    constructor(props) {
-        super(props);
+return (
+    <>
+    {     isLogged ? (
+        <span> true</span>
+         ) : (
+            <span> false</span>
+         )
+        
     }
-
-    render() {
-        return React.createElement('p', {style: { color: 'blue'}}, 'Paragraph de '+this.props.name);
-    }
+    </>
+)
 }
 
-
-ReactDOM.render(React.createElement(UserPanel,{}, null), document.getElementById('root'));
+ReactDOM.render(<UserPanel firstName="Basptiste"/>, document.getElementById('root'));
  
 
 

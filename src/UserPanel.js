@@ -7,14 +7,16 @@ export class UserPanel extends React.Component {
         super(props);
     }
 
-    render() {
-        return React.createElement('div',{}, null,
-        React.createElement('p',  {style: { color: 'red'}}, 'First Name: '+this.props.firstName),
-        React.createElement('p',  {style: { color: 'blue'}}, 'Last Name: '+this.props.lastName),
-        React.createElement('p',  {style: { color: 'green'}}, 'Email: '+this.props.email),
-        React.createElement('img',  { src : 'https://www.gravatar.com/avatar/'+md5(this.props.email) }, null),
-        );
-    }
+ render() {
+     return (
+     <div>
+         <p style = {{color: 'blue'}}>First Name: {this.props.firstName}</p>
+         <p className="makeRed">Last Name: {this.props.lastName}</p>
+         <p className="makeGreen">Email: {this.props.email}</p>
+         <img src={"https://www.gravatar.com/avatar/" + md5(this.props.email)}/>
+     </div>);
+ }
+
 }
 
 // customProp: function(props, propName, componentName) {
