@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/javascript-sncf/buildthub.io/static/js/main.3c2ea885.chunk.js",
+    "main.js.map": "/javascript-sncf/buildthub.io/static/js/main.3c2ea885.chunk.js.map",
+    "runtime-main.js": "/javascript-sncf/buildthub.io/static/js/runtime-main.c3901238.js",
+    "runtime-main.js.map": "/javascript-sncf/buildthub.io/static/js/runtime-main.c3901238.js.map",
+    "static/js/2.193af009.chunk.js": "/javascript-sncf/buildthub.io/static/js/2.193af009.chunk.js",
+    "static/js/2.193af009.chunk.js.map": "/javascript-sncf/buildthub.io/static/js/2.193af009.chunk.js.map",
+    "index.html": "/javascript-sncf/buildthub.io/index.html",
+    "precache-manifest.68164e86343a313768884d714b0e1fdd.js": "/javascript-sncf/buildthub.io/precache-manifest.68164e86343a313768884d714b0e1fdd.js",
+    "service-worker.js": "/javascript-sncf/buildthub.io/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3901238.js",
+    "static/js/2.193af009.chunk.js",
+    "static/js/main.3c2ea885.chunk.js"
+  ]
+}
