@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
-import { UserPanel } from './UserPanel';
+import {SearchStation} from './SearchStation';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App({ isLogged }) {
     const name = 'Redha';
@@ -20,7 +20,7 @@ return (
 )
 }
 
-ReactDOM.render(<UserPanel firstName="Basptiste"/>, document.getElementById('root'));
+ReactDOM.render(<SearchStation/>, document.getElementById('root'));
  
 
 
