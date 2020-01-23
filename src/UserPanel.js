@@ -12,7 +12,7 @@ export class UserPanel extends React.Component {
      <div>
          <p style = {{color: 'blue'}}>First Name: {this.props.firstName}</p>
          <p className="makeRed">Last Name: {this.props.lastName}</p>
-         <p className="makeGreen">Email: {this.props.email}</p>
+         <p id="email" className="makeGreen">Email: {this.props.email}</p>
          <img src={"https://www.gravatar.com/avatar/" + md5(this.props.email)}/>
      </div>);
  }
