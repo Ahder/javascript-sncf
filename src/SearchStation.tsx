@@ -3,7 +3,7 @@ import InputComp from "./InputComp";
 import ListingComp from "./ListingComp";
 
 
-export class SearchStation extends React.Component {
+export class SearchStation extends React.Component<any, any> {
 
     constructor(props) {
         super(props);

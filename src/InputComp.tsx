@@ -2,12 +2,13 @@ import React from 'react';
 import {launchSncfRequest} from "./fncs";
 
 
-export default class InputComp extends React.Component {
+export default class InputComp extends React.Component<any, any> {
 
     constructor(props) {
         super(props);
         this.onChangeInput = this.onChangeInput.bind(this);
     }
+
 
     async onChangeInput(e) {
         let gares = await launchSncfRequest(e.target.value) || [];
